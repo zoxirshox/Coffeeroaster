@@ -1,0 +1,39 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header {
+  position: relative;
+  padding-top: 37px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__nav {
+    @include reset-list;
+    text-align: center;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      @include textContent(navBar);
+      margin-left: 29px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: $color-gray;
+
+        &:hover {
+          color: $color-dark-grey-blue;
+        }
+      }
+    }
+  }
+}

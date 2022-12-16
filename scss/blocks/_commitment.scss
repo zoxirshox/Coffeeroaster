@@ -1,0 +1,65 @@
+.commitment {
+  margin-top: 68px;
+  &__box {
+    display: flex;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    &--bg-color {
+      position: relative;
+      width: 100%;
+      height: 473px;
+      background-color: #2c343e;
+      border-radius: 10px;
+    }
+  }
+  &__content {
+    margin-left: auto;
+    padding-top: 90px;
+    max-width: 540px;
+
+    &--wrapper {
+      padding-top: 88px;
+      margin-left: 85px;
+      margin-right: auto;
+    }
+
+    .commitment__caption {
+      margin: 0;
+      margin-bottom: 32px;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      color: $color-dark-grey-blue;
+
+      &--color {
+        color: $bg-color;
+      }
+    }
+
+    .commitment__subtitle {
+      color: $color-dark-grey-blue;
+      margin: 0;
+      font-size: 16px;
+      line-height: 26px;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+
+      &--color {
+        color: $bg-color;
+      }
+    }
+  }
+
+  &__img--position {
+    position: absolute;
+    top: -76px;
+  }
+}
